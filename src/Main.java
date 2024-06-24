@@ -2,7 +2,7 @@ import javax.swing.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class  Main {
     public static void main(String[] args) {
         //Creación de un objeto (la ventana)
         JFrame frame = new JFrame();
@@ -10,7 +10,8 @@ public class Main {
         frame.setTitle("Calculadora");
         //Recolleccion de todos los elementos que posee la ventana
         frame.setContentPane(new calculadora().panel);
-        frame.pack();
+        frame.setSize(700,600);
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 }
