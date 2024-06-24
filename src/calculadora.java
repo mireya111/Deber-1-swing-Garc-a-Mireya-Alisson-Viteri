@@ -99,16 +99,16 @@ public class calculadora {
             }
         });
         //Boton seno
-
         bt_seno.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 double angulo = Double.parseDouble(numero1.getText());
                 double angulo_radianes = Math.toRadians(angulo);
                 double resultado = Math.sin(angulo_radianes);
-                tA_resultado.setText(String.format("%.2f", resultado));
+                tA_resultado.setText(String.format("%.2f", resultado)); //Toma el valor numérico y lo redondea a dos decimales luego lo convierte en cadena de texto
             }
         });
+        //Boton tangente
         bt_tangente.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -118,6 +118,7 @@ public class calculadora {
                 tA_resultado.setText(String.format("%.2f", resultado));
             }
         });
+        //Boton coseno
         bt_coseno.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

@@ -10,7 +10,7 @@ public class  Main {
         frame.setTitle("Calculadora");
         //Recolleccion de todos los elementos que posee la ventana
         frame.setContentPane(new calculadora().panel);
-        frame.setSize(700,600);
+        frame.setSize(750,600);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
