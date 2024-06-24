@@ -28,7 +28,7 @@ public class calculadora {
                 double numero01 = Double.parseDouble(numero1.getText());
                 double numero02 = Double.parseDouble(numero2.getText());
                 double resultado = numero01 + numero02;
-                respuesta.setText(String.valueOf(resultado));
+                respuesta.setText(String.format("%.2f",resultado));
                 aclaraciones.setText("Ninguna");
             }
         });
@@ -39,7 +39,7 @@ public class calculadora {
                 double numero01 = Double.parseDouble(numero1.getText());
                 double numero02 = Double.parseDouble(numero2.getText());
                 double resultado = numero01 * numero02;
-                respuesta.setText(String.valueOf(resultado));
+                respuesta.setText(String.format("%.2f",resultado));
                 aclaraciones.setText("Ninguna");
             }
         });
@@ -50,7 +50,7 @@ public class calculadora {
                 double numero01 = Double.parseDouble(numero1.getText());
                 double numero02 = Double.parseDouble(numero2.getText());
                 double resultado = numero01 - numero02;
-                respuesta.setText(String.valueOf(resultado));
+                respuesta.setText(String.format("%.2f",resultado));
                 aclaraciones.setText("El orden de la resta fue, numero 1 - numero 2");
             }
         });
@@ -68,7 +68,7 @@ public class calculadora {
                     aclaraciones.setText("El numero 2 es igual a 0 por ello no es posible la division");
                 } else if (numero02>0 || numero02<0){
                     double resultado = numero01 / numero02;
-                    respuesta.setText(String.valueOf(resultado));
+                    respuesta.setText(String.format("%.2f",resultado));
                     aclaraciones.setText("Dividendo = numero1 y Divisor = numero 2");
                 }
             }
@@ -80,7 +80,7 @@ public class calculadora {
                 double numero01 = Double.parseDouble(numero1.getText());
                 double numero02 = Double.parseDouble(numero2.getText());
                 double potenciacion = Math.pow(numero01,numero02);
-                respuesta.setText(String.valueOf(potenciacion));
+                respuesta.setText(String.format("%.2f",potenciacion));
                 aclaraciones.setText("Base = numero 1 y exponente = numero 2");
             }
         });
