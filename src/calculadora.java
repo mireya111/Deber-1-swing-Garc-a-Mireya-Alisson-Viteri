@@ -61,8 +61,7 @@ public class calculadora {
                 double numero01 = Double.parseDouble(numero1.getText());
                 double numero02 = Double.parseDouble(numero2.getText());
                 if (numero02==0 && numero01==0){
-                    tA_resultado.setText("Resultado indefinido");
-                    tA_resultado.setText("0/0 está indeterminado.");
+                    tA_resultado.setText("Resultado indefinido 0/0 está indeterminado.");
                 } else if (numero02==0) {
                     tA_resultado.setText("No se puede dividir entre cero");
                 } else if (numero02>0 || numero02<0){
@@ -91,10 +90,8 @@ public class calculadora {
                     double radicacion1=Math.sqrt(numero01);
                     double radicacion2 = Math.sqrt(numero02);
                     tA_resultado.setText("Raiz numero 01: " + String.format("%.2f", radicacion1) + " " + "Raiz numero 02: " + String.format("%.2f", radicacion2));
-                    tA_resultado.setText("Se muestra la raiz cuadrada de cada numero digitado");
                 } else if (numero02<0 || numero01<0){
-                    tA_resultado.setText("No exite raiz cuadrada de un numero negativo");
-                    tA_resultado.setText("El numero 1 o 2 es un numero negativo");
+                    tA_resultado.setText("No exite raiz cuadrada de un numero negativo, el numero 1 o 2 es un numero negativo");
                 }
             }
         });
